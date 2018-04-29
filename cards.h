@@ -57,8 +57,16 @@ public:
 	Player(int m);
 	void current_amount(Hand dealer, double bet);
 	int get_money();
+	Hand get_hand();
+	void set_hand(vector<Card> new_cards,double total)
+	{
+		a_hand.get_cards() = new_cards;
+		a_hand.get_total() = total;
+	}
+	
 private:
 	double money;
+	Hand a_hand;
 };
 
 #endif
