@@ -73,7 +73,7 @@ int main() {
 		
 		if (player_cards.compare(dealer_cards) > 0)
 		{
-			cout << "You win " << bet_money;
+			cout << "You win $" << bet_money;
 			player.set_money(player.get_money() + bet_money);
 			dealer.set_money(player.get_money() - bet_money);
 		}
@@ -83,7 +83,7 @@ int main() {
 		}
 		else
 		{	
-			cout << "You lose " << bet_money;
+			cout << "You lose $" << bet_money;
 			player.set_money(player.get_money() - bet_money);
 			dealer.set_money(player.get_money() + bet_money);
 		}
