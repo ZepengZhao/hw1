@@ -43,6 +43,29 @@ public:
 	Hand();
 	vector<Card> get_cards();
 	double get_total();
+	void set_total(double new_total);
+
+	// 1:win 0:draw -1:lose
+	int compare(Hand hand2)
+	{
+		if (total >7.5)
+		{
+			return -1;
+
+		}
+		else if (total= 7.5&&hand2.get_total() <= 7.5&&hand2.get_total() > total)
+		{
+			return -1;
+		}
+		else if (hand2.get_total() <= 7.5&&hand2.get_total() <= 7.5&&hand2.get_total() == total)
+		{
+			return 0;
+		}
+		else
+		{
+			return 1;
+		}
+	}
 
 private:
 	std::vector<Card> cards;
@@ -54,13 +77,15 @@ class Player {
 public:
 	
 	Player(int m);
-	void current_amount(Hand dealer, double bet);
 	int get_money();
-	Hand get_hand();
-
+	void set_money(double new_money)
+	{
+		money = new_money;
+	}
+	
+	
 private:
 	double money;
-	Hand a_hand;
 };
 
 #endif
