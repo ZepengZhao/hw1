@@ -57,11 +57,8 @@ public:
 	Player(int m);
 	void current_amount(Hand dealer, double bet);
 	int get_money();
-	Hand get_hand();
-
 private:
 	double money;
-	Hand a_hand;
 };
 
 #endif
