@@ -183,12 +183,18 @@ bool Card::operator < (Card card2) const {
 	return rank < card2.rank;
 }
 
+void Hand::save_card(Card new_card)
+{
+	cards.push_back(new_card);
+}
 
-
-/* *************************************************
-Hand class
-************************************************* */
-// Implemente the member functions of the Hand class here.
+void Hand::hand_total(Card card)
+{
+	if (1 <= card.get_rank() && card.get_rank() <= 7)
+		total += card.get_rank();
+	if (10 <= card.get_rank() && card.get_rank() <= 12)
+		total += 0.5;
+}
 
 
 
