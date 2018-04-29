@@ -60,7 +60,8 @@ private:
 
 class Hand {
 public:
-	// A vector of Cards
+	void save_card(Card new_card);
+	void hand_total(Card card);
 	Hand();
 
 	// You decide what functions you'll need...
