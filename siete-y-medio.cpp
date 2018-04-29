@@ -11,7 +11,7 @@ int main() {
 	Player player(100);
 	Player dealer(900);
 	double bet_money;
-
+	cout << endl;
 	Card deal_card;
 	char ans;
 	cout << "You have $" << player.get_money() << ".";
