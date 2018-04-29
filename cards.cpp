@@ -2,23 +2,7 @@
 #include <cstdlib>
 #include <iostream>
 
-/*
-You might or might not need these two extra libraries
-#include <iomanip>
-#include <algorithm>
-*/
 
-
-/* *************************************************
-Card class
-************************************************* */
-
-/*
-Default constructor for the Card class.
-It could give repeated cards. This is OK.
-Most variations of Blackjack are played with
-several decks of cards at the same time.
-*/
 Card::Card() {
 	int r = 1 + rand() % 4;
 	switch (r) {
@@ -45,7 +29,6 @@ Card::Card() {
 	}
 }
 
-// Accessor: returns a string with the suit of the card in Spanish 
 string Card::get_spanish_suit() const {
 	string suitName;
 	switch (suit) {
@@ -66,7 +49,7 @@ string Card::get_spanish_suit() const {
 	return suitName;
 }
 
-// Accessor: returns a string with the rank of the card in Spanish 
+
 string Card::get_spanish_rank() const {
 	string rankName;
 	switch (rank) {
@@ -106,9 +89,6 @@ string Card::get_spanish_rank() const {
 }
 
 
-
-// Accessor: returns a string with the suit of the card in English 
-// This is just a stub! Modify it to your liking.
 string Card::get_english_suit() const {
 	string suitName;
 	switch (suit) {
@@ -129,8 +109,6 @@ string Card::get_english_suit() const {
 	return suitName;
 }
 
-// Accessor: returns a string with the rank of the card in English 
-// This is just a stub! Modify it to your liking.
 string Card::get_english_rank() const {
 	string rankName;
 	switch (rank) {
@@ -171,14 +149,11 @@ string Card::get_english_rank() const {
 
 
 
-// Assigns a numerical value to card based on rank.
-// AS=1, DOS=2, ..., SIETE=7, SOTA=10, CABALLO=11, REY=12
 int Card::get_rank() const {
 	return static_cast<int>(rank) + 1;
 }
 
-// Comparison operator for cards
-// Returns TRUE if card1 < card2
+
 bool Card::operator < (Card card2) const {
 	return rank < card2.rank;
 }
@@ -209,6 +184,11 @@ vector<Card> Hand::get_cards()
 double Hand::get_total()
 {
 	return total;
+}
+
+Player::Player(int m)
+{
+	money = m;
 }
 
 void Player::current_amount(Hand dealer_hand, double bet)
