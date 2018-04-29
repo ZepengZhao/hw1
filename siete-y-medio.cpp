@@ -11,14 +11,13 @@ int main() {
 	Player player(100);
 	Player dealer(900);
 	double bet_money;
-	cout << endl;
 	Card deal_card;
 	char ans;
-	cout << "You have $" << player.get_money() << ".";
-	cout << "Enter bet:";
-	cin >> bet_money;
 	while (player.get_money() > 0 && dealer.get_money() > 0)
 	{	
+		cout << "You have $" << player.get_money() << ".";
+		cout << "Enter bet:";
+		cin >> bet_money;
 		Hand player_cards;
 		while (true)
 		{
@@ -74,7 +73,7 @@ int main() {
 		
 		if (player_cards.compare(dealer_cards) > 0)
 		{
-			cout << "You win";
+			cout << "You win " << bet_money;
 			player.set_money(player.get_money() + bet_money);
 			dealer.set_money(player.get_money() - bet_money);
 		}
@@ -84,7 +83,7 @@ int main() {
 		}
 		else
 		{	
-			cout << "You lose";
+			cout << "You lose " << bet_money;
 			player.set_money(player.get_money() - bet_money);
 			dealer.set_money(player.get_money() + bet_money);
 		}
