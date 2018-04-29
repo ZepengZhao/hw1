@@ -183,6 +183,11 @@ bool Card::operator < (Card card2) const {
 	return rank < card2.rank;
 }
 
+Hand::Hand()
+{
+	total = 0;
+}
+
 void Hand::save_card(Card new_card)
 {
 	cards.push_back(new_card);
@@ -206,3 +211,39 @@ double Hand::get_total()
 	return total;
 }
 
+void Player::current_amount(Hand dealer_hand, double bet)
+{
+	vector<double> both_money(2);
+	if (a_hand.get_total() >7.5)
+	{
+		cout << "You lose " << bet;
+		money -= bet;
+
+	}
+	else if (a_hand.get_total() <= 7.5&&dealer_hand.get_total() <= 7.5&&dealer_hand.get_total() > a_hand.get_total())
+	{
+		cout << "You lose " << bet;
+		money -= bet;
+	}
+	else if (a_hand.get_total() <= 7.5&&dealer_hand.get_total() <= 7.5&&dealer_hand.get_total() == a_hand.get_total())
+	{
+		cout << "Nobody wins";
+	}
+	else
+	{
+		cout << "You win " << bet;
+		money += bet;
+	}
+
+}
+
+Hand Player::get_hand()
+{
+	return a_hand;
+}
+
+
+int Player::get_money()
+{
+	return money;
+}
