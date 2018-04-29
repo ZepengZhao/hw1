@@ -191,9 +191,11 @@ Player::Player(int m)
 	money = m;
 }
 
+
+
+
 void Player::current_amount(Hand dealer_hand, double bet)
 {
-	vector<double> both_money(2);
 	if (a_hand.get_total() >7.5)
 	{
 		cout << "You lose " << bet;
@@ -220,6 +222,11 @@ void Player::current_amount(Hand dealer_hand, double bet)
 Hand Player::get_hand()
 {
 	return a_hand;
+}
+
+void Hand::set_total(double new_total)
+{
+	total = new_total;
 }
 
 

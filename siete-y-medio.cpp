@@ -19,8 +19,10 @@ int main() {
 	cin >> bet_money;
 	cout << endl;
 	while (player.get_money() > 0 && dealer.get_money() > 0)
-	{
-		Hand player_cards;
+	{	
+		player.get_hand().get_cards().clear();
+		player.get_hand().set_total(0);
+		Hand player_cards = player.get_hand();
 		while (true)
 		{
 

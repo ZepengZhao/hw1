@@ -43,6 +43,7 @@ public:
 	Hand();
 	vector<Card> get_cards();
 	double get_total();
+	void set_total(double new_total);
 
 private:
 	std::vector<Card> cards;
