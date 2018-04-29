@@ -196,10 +196,13 @@ void Hand::hand_total(Card card)
 		total += 0.5;
 }
 
+vector<Card> Hand::get_cards()
+{
+	return cards;
+}
 
-
-/* *************************************************
-Player class
-************************************************* */
-// Implemente the member functions of the Player class here.
+double Hand::get_total()
+{
+	return total;
+}
 

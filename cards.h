@@ -63,11 +63,12 @@ public:
 	void save_card(Card new_card);
 	void hand_total(Card card);
 	Hand();
-
-	// You decide what functions you'll need...
+	vector<Card> get_cards();
+	double get_total();
 
 private:
-	// You decide what fields you'll need...
+	std::vector<Card> cards;
+	double total;
 };
 
 
