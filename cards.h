@@ -74,15 +74,15 @@ private:
 
 class Player {
 public:
-	// Constructor. 
-	//    Assigns initial amount of money
+	
 	Player(int m);
-
-	// You decide what functions you'll need...
+	void current_amount(Hand dealer, double bet);
+	int get_money();
+	Hand get_hand();
 
 private:
-	int money;
-	// You decide what extra fields (if any) you'll need...
+	double money;
+	Hand a_hand;
 };
 
 #endif
