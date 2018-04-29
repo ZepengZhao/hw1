@@ -193,37 +193,6 @@ Player::Player(int m)
 
 
 
-
-void Player::current_amount(Hand dealer_hand, double bet)
-{
-	if (a_hand.get_total() >7.5)
-	{
-		cout << "You lose " << bet;
-		money -= bet;
-
-	}
-	else if (a_hand.get_total() <= 7.5&&dealer_hand.get_total() <= 7.5&&dealer_hand.get_total() > a_hand.get_total())
-	{
-		cout << "You lose " << bet;
-		money -= bet;
-	}
-	else if (a_hand.get_total() <= 7.5&&dealer_hand.get_total() <= 7.5&&dealer_hand.get_total() == a_hand.get_total())
-	{
-		cout << "Nobody wins";
-	}
-	else
-	{
-		cout << "You win " << bet;
-		money += bet;
-	}
-
-}
-
-Hand Player::get_hand()
-{
-	return a_hand;
-}
-
 void Hand::set_total(double new_total)
 {
 	total = new_total;

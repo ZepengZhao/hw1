@@ -1,6 +1,6 @@
 ﻿  siete-y-medio.cpp
-c:\users\gui\project1\project1\siete-y-medio.cpp(36): warning C4018: '<': signed/unsigned mismatch
-c:\users\gui\project1\project1\siete-y-medio.cpp(65): warning C4018: '<': signed/unsigned mismatch
+c:\users\gui\project1\project1\siete-y-medio.cpp(33): warning C4018: '<': signed/unsigned mismatch
+c:\users\gui\project1\project1\siete-y-medio.cpp(62): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
   Skipping... (no relevant changes detected)
   cards.cpp
