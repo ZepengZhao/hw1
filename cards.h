@@ -46,26 +46,8 @@ public:
 	void set_total(double new_total);
 
 	// 1:win 0:draw -1:lose
-	int compare(Hand hand2)
-	{
-		if (total >7.5)
-		{
-			return -1;
-
-		}
-		else if (total<= 7.5&&hand2.get_total() <= 7.5&&hand2.get_total() > total)
-		{
-			return -1;
-		}
-		else if (hand2.get_total() <= 7.5&&hand2.get_total() <= 7.5&&hand2.get_total() == total)
-		{
-			return 0;
-		}
-		else
-		{
-			return 1;
-		}
-	}
+	int compare(Hand hand2);
+	
 
 private:
 	std::vector<Card> cards;

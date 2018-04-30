@@ -191,7 +191,26 @@ Player::Player(int m)
 	money = m;
 }
 
+int Hand::compare(Hand hand2)
+{
+	if (total >7.5)
+	{
+		return -1;
 
+	}
+	else if (total = 7.5&&hand2.get_total() <= 7.5&&hand2.get_total() > total)
+	{
+		return -1;
+	}
+	else if (hand2.get_total() <= 7.5&&hand2.get_total() <= 7.5&&hand2.get_total() == total)
+	{
+		return 0;
+	}
+	else
+	{
+		return 1;
+	}
+}
 
 void Hand::set_total(double new_total)
 {
