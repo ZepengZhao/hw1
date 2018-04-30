@@ -53,7 +53,7 @@ public:
 			return -1;
 
 		}
-		else if (total= 7.5&&hand2.get_total() <= 7.5&&hand2.get_total() > total)
+		else if (total<= 7.5&&hand2.get_total() <= 7.5&&hand2.get_total() > total)
 		{
 			return -1;
 		}

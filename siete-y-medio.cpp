@@ -13,7 +13,6 @@ int main() {
 	double bet_money;
 	Card deal_card;
 	char ans;
-	cout << endl;
 	while (player.get_money() > 0 && dealer.get_money() > 0)
 	{	
 		cout << "You have $" << player.get_money() << ".";
