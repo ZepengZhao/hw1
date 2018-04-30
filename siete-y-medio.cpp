@@ -13,7 +13,7 @@ int main() {
 	double bet_money;
 	Card deal_card;
 <<<<<<< HEAD
-	char  ans;
+	char ans;
 =======
 	char ans;
 >>>>>>> experiment
