@@ -52,7 +52,7 @@ int main() {
 				break;
 			
 		}
-		Hand dealer_cards;
+		Hand  dealer_cards;
 		while (player_cards.get_total() <= 7.5&&dealer_cards.get_total() < 5.5)
 		{
 			Card new_card;
