@@ -94,7 +94,8 @@ int main() {
 			dealer.set_money(player.get_money() + bet_money);
 		}
 
-		cout << endl << endl;
+		cout << endl <<  endl;
+		cout << endl;
 	}
 	return 0;
 
