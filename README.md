@@ -1,7 +1,7 @@
 # hw1
 Description:this program is a single-player version of the card game known as 'siete y medio' (seven and a half).
 
-Rule:
+Rules:
 
 There are 4 possible outcomes:
 
@@ -20,3 +20,7 @@ The player is then repeatedly asked if another card is wanted. The player can co
 After the player's turn is over, the dealer's cards are shown. The dealer's play is always the same: the dealer continues to draw cards only if the total is less than 5&frac12;
 
 The goal of the game is to get cards whose total value comes the closest to 7&frac12; without going over it. Getting a card total over 7&frac12; is called "busting".
+
+the player starts with 100 pesos (or dollars) and the game ends when the player is down to 0, or when the dealer loses 900.
+
+Afer the game ends, you can find a log file whuch record the game process.
