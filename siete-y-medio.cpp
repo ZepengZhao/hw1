@@ -12,7 +12,11 @@ int main() {
 	Player dealer(900);
 	double bet_money;
 	Card deal_card;
+<<<<<<< HEAD
 	char  ans;
+=======
+	char ans;
+>>>>>>> experiment
 	while (player.get_money() > 0 && dealer.get_money() > 0)
 	{	
 		cout << "You have $" << player.get_money() << ".";
