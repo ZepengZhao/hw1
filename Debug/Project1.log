@@ -1,1 +1,9 @@
-﻿  Project1.vcxproj -> C:\Users\gui\Project1\Debug\Project1.exe
+﻿  siete-y-medio.cpp
+c:\users\gui\project1\project1\siete-y-medio.cpp(15): error C2059: syntax error: '<<'
+c:\users\gui\project1\project1\siete-y-medio.cpp(17): error C2059: syntax error: '=='
+c:\users\gui\project1\project1\siete-y-medio.cpp(19): error C2059: syntax error: '>>'
+c:\users\gui\project1\project1\siete-y-medio.cpp(21): error C2143: syntax error: missing ';' before '{'
+c:\users\gui\project1\project1\siete-y-medio.cpp(37): warning C4018: '<': signed/unsigned mismatch
+c:\users\gui\project1\project1\siete-y-medio.cpp(50): error C2065: 'ans': undeclared identifier
+c:\users\gui\project1\project1\siete-y-medio.cpp(51): error C2065: 'ans': undeclared identifier
+c:\users\gui\project1\project1\siete-y-medio.cpp(67): warning C4018: '<': signed/unsigned mismatch
