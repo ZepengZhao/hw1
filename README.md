@@ -1,6 +1,6 @@
 # hw1
 Description:this program is a single-player version of the card game known as 'siete y medio' (seven and a half).
- There are 4 possible outcomes:
+There are 4 possible outcomes:
 
 1.The player comes closer to 7&frac12; than the dealer or the dealer busts but the player did not bust. In this case the player wins the round and the player's money increases by the amount that was bet.
 2.The dealer comes closer to 7&frac12; than the player, or the player busts. In this case the player loses the round and the player's money decreases by the amount that was bet.
